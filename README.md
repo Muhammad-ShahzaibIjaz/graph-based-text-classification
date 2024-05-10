@@ -52,10 +52,4 @@ Ensure you have the following dependencies installed to run the code:
 
 This project was inspired by the intersection of graph theory and machine learning and builds upon foundational research in document classification. We extend our gratitude to the open-source community for their invaluable contributions to the libraries and tools used in this project.
 
-## Contributions
-
-Contributions are welcome! Whether you spot a bug, have a feature request, or want to contribute improvements, feel free to open an issue or submit a pull request.
-
-Let's continue exploring the fascinating world of graph-based text classification together!
-
 **Happy classifying!** 📚🔍
