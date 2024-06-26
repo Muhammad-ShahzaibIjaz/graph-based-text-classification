@@ -172,12 +172,12 @@ def main():
     train_data = fashion_train + sports_train + science_train
     test_data = fashion_test + sports_test + science_test
 
-    k = 3
+    k_value = 3
     predictions = []
     true_labels = []
 
     for test_graph,text_chunk,label in test_data:
-        predicted_class = knn(train_data, test_graph, k)
+        predicted_class = knn(train_data, test_graph, k_value)
         predictions.append(predicted_class)
         true_labels.append(label)
         print(f'Predicted Class : {predicted_class}, Actual_Category : {label}')
@@ -196,7 +196,7 @@ def main():
 
     X_train_vec, X_test_vec = vectorize_text(X_train, X_test)
 
-    y_pred = k_nearest_neighbor(X_train_vec, y_train, X_test_vec, k)
+    y_pred = k_nearest_neighbor(X_train_vec, y_train, X_test_vec, k_value)
     print(classification_report(y_test, y_pred))
     confMatrix = confusion_matrix(y_test, y_pred)
     plot_confusion_matrix(confMatrix)
